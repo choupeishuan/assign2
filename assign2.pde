@@ -132,6 +132,7 @@ switch(gameState)  {
        //enemy
        image(enemyImg,enemyX,enemyY);
        enemyX+=3;
+       enemyY+= (fighterY-enemyY)/30;
        enemyX %=641;
        if(enemyX>=640 || enemyX<=0){
        enemyY=random(0,419);
